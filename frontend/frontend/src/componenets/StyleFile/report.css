@@ -1,0 +1,192 @@
+.Reports {
+    min-height: calc(100vh - 65px);
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+.Reports h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.Reports > p {
+    margin-top: 5px;
+    color: #666;
+}
+
+.report-filter {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.report-filter select,
+.report-filter input {
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid #d5d5d5;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.report-filter select {
+    width: 180px;
+}
+
+.report-filter input {
+    width: 120px;
+}
+
+.report-filter button {
+    height: 42px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+}
+
+.report-charts {
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.report-chart {
+    min-height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.report-chart h3 {
+    margin: 0;
+}
+
+.monthly-trend {
+    grid-column: 1 / -1;
+}
+
+
+
+
+.monthlytrend {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.monthlytrend-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.monthlytrend-header h3 {
+    margin: 0;
+}
+
+.monthlytrend-header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #111827;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.monthlytrend-header button:hover {
+    background-color: #374151;
+}
+
+.monthlytrend-chart {
+    width: 100%;
+    height: 300px;
+}
+
+
+@media (max-width: 768px) {
+
+    .Reports {
+        padding: 12px;
+    }
+
+    .Reports h1 {
+        font-size: 26px;
+    }
+
+    .report-filter {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px;
+    }
+
+    .report-filter select,
+    .report-filter input,
+    .report-filter button {
+        width: 100%;
+    }
+
+    .report-charts {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .report-chart {
+        padding: 12px;
+        min-height: 0;
+    }
+
+    .monthlytrend {
+        padding: 12px;
+    }
+
+    .monthlytrend-header {
+        gap: 10px;
+    }
+
+    .monthlytrend-header button {
+        padding: 9px 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Reports {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .report-chart {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .monthlytrend {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .monthlytrend-chart {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+}

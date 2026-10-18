@@ -1,0 +1,80 @@
+.prenin {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Income title */
+.prenin h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Table */
+.prenin table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table header */
+.prenin th {
+    padding: 12px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Table cells */
+.prenin td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Row hover */
+.prenin tbody tr:hover {
+    background-color: #f7f7f7;
+}
+
+
+.prevexpense {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.prevexpense h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.prevexpense table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.prevexpense th {
+    padding: 12px;
+    text-align: left;
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ddd;
+}
+
+.prevexpense td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.prevexpense tbody tr:hover {
+    background-color: #f7f7f7;
+}

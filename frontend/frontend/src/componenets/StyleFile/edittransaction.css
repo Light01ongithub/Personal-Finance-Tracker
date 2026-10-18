@@ -1,0 +1,180 @@
+/* =========================
+   POPUP OVERLAY
+   ========================= */
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.55);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   EDIT TRANSACTION POPUP
+   ========================= */
+
+.popup-overlay > .edit-transaction {
+    width: 420px;
+    max-width: 100%;
+
+    padding: 25px;
+
+    background-color: white;
+    border-radius: 14px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   HEADING
+   ========================= */
+
+.popup-overlay > .edit-transaction > span {
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #111;
+}
+
+
+/* =========================
+   FORM
+   ========================= */
+
+.edit-transaction form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+/* =========================
+   LABELS
+   ========================= */
+
+.edit-transaction form span {
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #444;
+
+    margin-top: 8px;
+}
+
+
+/* =========================
+   INPUTS
+   ========================= */
+
+.edit-transaction form input,
+.edit-transaction form textarea,
+.edit-transaction form select {
+    width: 100%;
+
+    padding: 11px 12px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d5d5d5;
+    border-radius: 7px;
+
+    background-color: white;
+
+    font-size: 14px;
+    font-family: inherit;
+
+    outline: none;
+
+    transition: border-color 0.2s ease;
+}
+
+
+/* =========================
+   INPUT FOCUS
+   ========================= */
+
+.edit-transaction form input:focus,
+.edit-transaction form textarea:focus,
+.edit-transaction form select:focus {
+    border-color: #555;
+}
+
+
+/* =========================
+   DESCRIPTION
+   ========================= */
+
+.edit-transaction form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+
+/* =========================
+   SAVE BUTTON
+   ========================= */
+
+.edit-transaction form button {
+    width: 100%;
+
+    margin-top: 18px;
+    padding: 11px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #000;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.edit-transaction form button:hover {
+    background-color: #333;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 500px) {
+
+    .popup-overlay {
+        align-items: flex-start;
+
+        overflow-y: auto;
+        padding: 20px 15px;
+    }
+
+    .popup-overlay > .edit-transaction {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .popup-overlay > .edit-transaction > span {
+        font-size: 20px;
+    }
+}
